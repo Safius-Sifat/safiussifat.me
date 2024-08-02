@@ -2,20 +2,25 @@
 // So they can be added as suffixes on different pages
 // Via <svelte:head>
 
-export const siteBaseUrl = 'https://sveltekit-static-blog-template.vercel.app/';
+export const siteBaseUrl = 'https://safiussifat.pages.dev/';
 
 export const keywords = [
+	'Safius',
+	'Sifat',
+	'Safius Sifat',
+	'Flutter',
+	'Riverpod',
 	'Svelte',
 	'SvelteKit',
-	'Template',
-	'Blog',
-	'Starter',
-	'Static Site'
+	'Android developer',
+	'Ios developer',
+	'Freelancer sifat',
+	'Cross Platform developer'
 ];
 
 export const description =
-	"A light, neat, and easy-to-use SvelteKit template for your next website.";
+	"A light, neat portfolio and blogging website of Safius Sifat";
 
-export const title = 'SvelteKit Static Blog Template';
+export const title = 'Safius Sifat . A developer';
 
 export const image = `${siteBaseUrl}/images/site-preview.png`;

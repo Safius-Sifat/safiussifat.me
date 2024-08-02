@@ -14,7 +14,10 @@
 		"story:build": "histoire build",
 		"story:preview": "histoire preview",
 		"optimize-images": "image-transmutation --run --sourceFolder './build/images' --targetFolder './build/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
-		"postbuild": "npm run optimize-images && svelte-sitemap --domain https://safiussifat.pages.dev/"
+		"postbuild": "npm run optimize-images && svelte-sitemap --domain https://safiussifat.pages.dev/",
+		"cloudfare-sitemap": "svelte-sitemap --out-dir .svelte-kit/cloudflare --domain https://safiussifat.pages.dev/",
+		"cloudfare-optimize-images": "image-transmutation --run --sourceFolder '.svelte-kit/cloudflare/images' --targetFolder '.svelte-kit/cloudflare/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
+		"cloudfare-build": "npm run build && npm run cloudfare-sitemap && npm run cloudfare-optimize-images"
 	},
 	"devDependencies": {
 		"@histoire/plugin-svelte": "^0.17.17",
